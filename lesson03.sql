@@ -20,3 +20,12 @@ SELECT id, account_id, total
 	FROM orders
 	ORDER BY total
 	LIMIT 20
+
+--21. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/*Write a query that returns the top 5 rows from orders ordered according to newest to oldest, but with the largest total_amt_usd for each date listed first for each date.*/
+
+SELECT total_amt_usd, occurred_at
+	FROM orders
+	ORDER BY occurred_at DESC
+	LIMIT 5
