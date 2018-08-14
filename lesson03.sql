@@ -75,3 +75,23 @@ SELECT id, account_id, standard_amt_usd/standard_qty AS standard_paper_unit_pric
 
 SELECT id, account_id, poster_amt_usd/(standard_amt_usd+gloss_amt_usd+poster_amt_usd+.001) AS poster_rev_perc
 	FROM orders;
+
+--33. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/*1. All the companies whose names start with 'C'.*/
+
+SELECT *
+	FROM accounts
+	WHERE name LIKE 'C%';
+
+/*2. All companies whose names contain the string 'one' somewhere in the name.*/
+
+SELECT *
+	FROM accounts
+	WHERE name LIKE '%one%';
+
+/*3. All companies whose names end with 's'.*/
+
+SELECT *
+	FROM accounts
+	WHERE name LIKE '%s';
