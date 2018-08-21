@@ -10,4 +10,10 @@ SELECT city, country
 	FROM city_list
 	WHERE country LIKE 'U%';
 
+/*2. Found the correct country name.*/
+
+SELECT city, country
+	FROM city_list
+	WHERE country = 'United States';
+
 /*Write a SQL query to extract the global data. Export to CSV.*/
