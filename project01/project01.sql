@@ -16,4 +16,10 @@ SELECT city, country
 	FROM city_list
 	WHERE country = 'United States';
 
+/*3. Search for city name 'Honolulu'.*/
+
+SELECT city, country
+	FROM city_list
+	WHERE country = 'United States' AND city LIKE 'H%';
+
 /*Write a SQL query to extract the global data. Export to CSV.*/
