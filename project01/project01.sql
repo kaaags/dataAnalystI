@@ -22,4 +22,10 @@ SELECT city, country
 	FROM city_list
 	WHERE country = 'United States' AND city LIKE 'H%';
 
+/*4. Search for next nearest city name 'Los Angeles'.*/
+
+SELECT city, country
+	FROM city_list
+	WHERE country = 'United States' AND city LIKE 'L%';
+
 /*Write a SQL query to extract the global data. Export to CSV.*/
