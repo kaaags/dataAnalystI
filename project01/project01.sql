@@ -34,4 +34,10 @@ SELECT city, country
 	FROM city_list
 	WHERE country = 'United States' AND city = 'Los Angeles';
 
+/*6. Extract city level data.*/
+
+SELECT *
+	FROM city_data
+	WHERE country = 'United States' AND city = 'Los Angeles';
+
 /*Write a SQL query to extract the global data. Export to CSV.*/
