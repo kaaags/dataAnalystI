@@ -41,3 +41,8 @@ SELECT *
 	WHERE country = 'United States' AND city = 'Los Angeles';
 
 /*Write a SQL query to extract the global data. Export to CSV.*/
+
+/*1. Extract global data.*/
+
+SELECT *
+	FROM global_data;
